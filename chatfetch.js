@@ -23,7 +23,7 @@ client.connect();
 // Called every time a message comes in:
 function onMessageHandler(target, context, msg, self) {
   //if a message doesn't start with an exclamation point, print it to the console
-  if (msg.substr(0, 1) !== commandPrefix) {
+  if (msg.substr(0, 1) !== "!") {
     console.log(`${msg}`);
     return;
   }
